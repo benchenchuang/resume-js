@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" /><!--禁止缩放-->
+    <meta name="format-detection" content="telephone=no" /><!--忽略数字为电话号码-->
+    <title>我的简历</title>
+    <link rel="stylesheet" href="style/mine.css"/>
+    <link rel="stylesheet" href="style/iconfont.css"/>
+</head>
+<body>
+
+    <div class="welcome_wrap">
+        <div class="welcome" v-if="welcome">
+            <div class="welcome_img">
+                <img :src="url_img">
+            </div>
+        </div>
+
+        <div class="miss_box" v-if="!welcome">
+            <div class="miss_img">
+                <img :src="miss_img">
+            </div>
+            <p :class="{tip:isActive}">多送一次选择的机会</p>
+        </div>
+
+        <div class="welcome_links box_flex">
+            <a :class="[{flex:isActive},{a_dec:isActive}]" href="index.html">了解一下</a>
+            <a :class="[{flex:isActive},{c_9:isActive}]" href="javascript:void(0);" @click="miss_Page()">不想了解</a>
+        </div>
+
+    </div>
+
+    <script src="js/jquery-1.9.0.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/mine.js"></script>
+    <script>
+        new Vue({
+            el:'.welcome_wrap',
+            data:{
+                isActive:true,
+                welcome:true,
+                url_img:'images/welcome.png',
+                miss_img:'images/miss.png'
+            },
+            methods:{
+                miss_Page: function () {
+                    this.welcome=false
+                }
+            }
+        })
+    </script>
+</body>
+</html>
