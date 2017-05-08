@@ -7,6 +7,7 @@
     "power":"40%",
     "power_txt":"熟悉度"
   },
+
   {
     "style":"skill_php",
     "name1":"Php",
@@ -38,6 +39,14 @@
     "txt":"熟悉HTML5特性和HTML5最新规范，能够熟练运用HTML5特性构建移动端的WebApp，基于HTML5.0标准进行页面制作；",
     "power":"4年",
     "power_txt":"使用年限"
+  },
+  {
+    "style":"skill_axure",
+    "name1":"Rp",
+    "name2":"Axure Rp",
+    "txt":"熟悉Axure的用法，能够根据产品构想熟练画出产品原型图.",
+    "power":"70%",
+    "power_txt":"熟悉度"
   },
   {
     "style":"skill_ps",

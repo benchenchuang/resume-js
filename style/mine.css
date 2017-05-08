@@ -1,4 +1,4 @@
-/*���������*/
+﻿/*���������*/
 body, h1, h2, h3, h4, h5, h6, hr, p,
 blockquote,
 dl, dt, dd, ul, ol, li,
@@ -584,11 +584,4 @@ a,button,input,textarea,select{
     color: #444;
     word-break: break-all;
 }
-
-
-
-
-
-
-
-
+.skill_axure{background:#9e0ebf}
